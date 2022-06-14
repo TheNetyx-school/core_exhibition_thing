@@ -1,0 +1,19 @@
+This is the website I used for the QR codes on my Core Exhibition posters.
+
+I probably didn't really need to use rails or any fancy web framework to make
+this work (haha), but the only free web hosting service I know and have
+experience with is heroku and I know rails works on there so this is using
+rails.
+
+This thing is really simple, it has two parts: one for TOK and one for EE.
+They all belong to the same controller since this may as well be made of
+static HTML (not even CSS) pages.
+
+The home page of the TOK part has links to the original source and also the
+image on the poster of each object on the poster and also a link to the full
+version of the poster. There are also 3 pages for the 3 images.
+
+The EE part only has one page, and it is the bibliography.
+
+All other pages redirect to a YouTube video of Rick Astley singing 'Never
+Gonna Give You Up'.
