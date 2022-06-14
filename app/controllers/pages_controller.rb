@@ -4,6 +4,7 @@ class PagesController < ApplicationController
   end
 
   def ee
+    0 / 0 # i dont want to deal with this shit, I'll just intentionally caues a 500
   end
 
   def tok
