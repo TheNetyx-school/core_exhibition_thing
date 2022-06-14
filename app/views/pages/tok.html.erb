@@ -1,1 +1,4 @@
-<h3>tok hello</h3>
+<h3>TOK</h3>
+<% (1..3).each do |n| %>
+    Object n: <%= link_to "original", object_path(n) %> <%= link_to "image", object_image_path(n) %> <br />
+<% end %>
