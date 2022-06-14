@@ -4,6 +4,6 @@ Rails.application.routes.draw do
   get "/ee",                to: "pages#ee"
   get "/tok",               to: "pages#tok"
 
-  get "/tok/orig/:object",  to: "pages#tok_original"
-  get "/tok/image/:object", to: "pages#tok_image"
+  get "/tok/orig/:object",  to: "pages#tok_original", as: :object
+  get "/tok/image/:object", to: "pages#tok_image",    as: :object_image
 end
