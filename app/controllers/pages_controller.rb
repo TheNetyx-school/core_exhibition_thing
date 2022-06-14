@@ -23,5 +23,16 @@ class PagesController < ApplicationController
   end
 
   def tok_image
+    @object = params[:object].to_i
+    case(@object)
+    when 1
+      @image_path = image_path("gpl.png")
+    when 2
+      @image_path = image_path("drm.png")
+    when 3
+      @image_path = image_path("bible.jpg")
+    else
+      raise ActionController::RoutingError.new('Not Found')
+    end
   end
 end
